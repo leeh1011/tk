@@ -1,0 +1,13 @@
+[workspace]
+members=["crates/tk-cli", "crates/tk-core"]
+resolver="2"
+
+[workspace.package]
+version="0.1.0"
+edition="2021"
+
+[workspace.dependencies]
+anyhow = "1"
+thiserror = "1"
+rusqlite = { version = "0.32", features = ["bundled", "chrono"] }
+chrono = "0.4"

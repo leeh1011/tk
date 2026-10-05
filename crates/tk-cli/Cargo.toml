@@ -1,0 +1,15 @@
+[package]
+name = "tk-cli"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "tk"
+path = "src/main.rs"
+
+[dependencies]
+tk-core = { path = "../tk-core" }
+anyhow.workspace = true
+
+[dev-dependencies]
+tempfile = "3.27.0"
