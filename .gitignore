@@ -1,3 +1,18 @@
+# Rust 빌드 결과물
 /target
+
+# SQLite DB 파일 (개인 데이터, 테스트 DB)
 *.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# 비밀값 (봇 토큰 등)
 .env
+
+# macOS
+.DS_Store
+
+# 에디터 설정
+.vscode/
+.idea/
