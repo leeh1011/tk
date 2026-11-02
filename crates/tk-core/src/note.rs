@@ -1,7 +1,8 @@
 use chrono::{DateTime, Utc};
 
-pub struct Note{
-    id:i64,
-    body:String,
-    created_at:DateTime<Utc>,
+#[derive(Debug, Clone)]
+pub struct Note {
+    pub id: i64,
+    pub body: String,
+    pub created_at: DateTime<Utc>,
 }
